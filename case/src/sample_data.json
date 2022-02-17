@@ -20,23 +20,23 @@
         "pressure":986,
         "humidity":90
         },
-        "visibility":10000,
-        "wind":{
-            "speed":5.14,
-            "deg":180
-            },
-        "clouds":{
-            "all":75
-            },
-        "dt":1645012094,
-        "sys":{
-            "type":2,
-            "id":2002867,
-            "country":"SE",
-            "sunrise":1644993645,
-            "sunset":1645027917
-            },
-        "timezone":3600,
-        "id":2711537,
-        "name":"Gothenburg","cod":200
+    "visibility":10000,
+    "wind":{
+        "speed":5.14,
+        "deg":180
+        },
+    "clouds":{
+        "all":75
+        },
+    "dt":1645012094,
+    "sys":{
+        "type":2,
+        "id":2002867,
+        "country":"SE",
+        "sunrise":1644993645,
+        "sunset":1645027917
+        },
+    "timezone":3600,
+    "id":2711537,
+    "name":"Gothenburg","cod":200
 }

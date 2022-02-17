@@ -15,10 +15,20 @@ body {
 
 p {
   font-size: 1.6rem;
+  text-align: center;
 }
 
 h1 {
   font-size: 6rem;
+  text-align: center;
+}
+h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.temp {
+  margin-top: 1rem;
 }
 
 .app {
@@ -31,7 +41,7 @@ h1 {
 
 .app:before {
   content: "";
-  background: url("./assets/göteborg.jpeg") no-repeat center/cover;
+  background: url("./assets/fiskekyrka.jpeg") no-repeat center/cover;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -59,7 +69,6 @@ h1 {
 
 .container {
   max-width: 700px;
-  height: 700px;
   margin: auto;
   padding: 0 1rem;
   top: 10%;
@@ -69,28 +78,44 @@ h1 {
   justify-content: space-between;
 }
 
-.app .top {
-  width: 100%;
-  margin: 1rem auto;
-}
-
 .app .description {
   position: relative;
-  right: -90%;
-  transform-origin: 0 0;
-  transform: rotate(270deg);
+  text-align: center;
+  margin-top: 3rem;
 }
 
-.app .bottom {
+.app .key-details {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
   width: 100%;
+  margin-top: 2rem;
   padding: 1rem;
   border-radius: 12px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 100, 150, 0.6);
+}
+
+.app .air {
+  margin-top: 2rem;
+  background-color: rgba(0, 100, 150, 0.6);
+  padding: 1.5rem 1rem;
+  border-radius: 12px;
 }
 
 .bold {
   font-weight: 700;
+}
+
+.unit {
+  margin-top: -1.2rem;
+  font-size: 1.2rem;
+  margin-right: 5%;
+  text-align: right;
+}
+
+.app .chartContainer {
+  margin-top: 2rem;
+  background-color: rgba(0, 100, 150, 0.6);
+  padding: 1.5rem 1rem;
+  border-radius: 12px;
 }
