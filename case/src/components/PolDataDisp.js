@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
  
 const PolDataDisp = (props) =>{
 
@@ -6,11 +6,11 @@ const PolDataDisp = (props) =>{
 
     const aqi_txt = (aqi) =>{
         switch(aqi){
-            case 1: return "Good"
-            case 2: return "Fair"
-            case 3: return "Moderate"
-            case 4: return "Poor"
-            case 5: return "Very Poor"
+            case 1: return "Väldigt Bra"
+            case 2: return "Bra"
+            case 3: return "Måttlig"
+            case 4: return "Dålig"
+            case 5: return "Väldigt Dålig"
 
             default: return "Trouble reading"
         }
@@ -21,7 +21,7 @@ const PolDataDisp = (props) =>{
     {inData.list ? 
 
     <div className="air">
-        <h2>Air Quality</h2> 
+        <h2>Luft Kvalité</h2> 
         <p>{aqi_txt(inData.list[0].main.aqi)}</p>
 
         <div className="key-details" style={{backgroundColor: "transparent"}}>
@@ -47,7 +47,7 @@ const PolDataDisp = (props) =>{
             </div>
         </div>
 
-            <p className="unit">μg/m<sup>3</sup></p>
+            <p className="unit">(μg/m<sup>3</sup>)</p>
     </div>
     
     :<></>}   
