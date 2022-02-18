@@ -12,7 +12,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 p {
   font-size: 1.6rem;
   text-align: center;
@@ -33,16 +32,17 @@ h2 {
 
 .app {
   width: 100%;
-  height: 100vh;
+  height: 160vh;
   position: relative;
   background-color: rgba(0, 0, 0, 0.25);
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
 }
 
 .app:before {
   content: "";
-  background: url("./assets/fiskekyrka.jpeg") no-repeat center/cover;
-  position: absolute;
+  background: url("./assets/fiskekyrka.jpeg") no-repeat center;
+  background-attachment: fixed;
+  position: fixed;
   width: 100%;
   height: 100%;
   top: 0;
@@ -71,7 +71,7 @@ h2 {
   max-width: 700px;
   margin: auto;
   padding: 0 1rem;
-  top: 10%;
+  top: 7vh;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -115,6 +115,7 @@ h2 {
 
 .app .chartContainer {
   margin-top: 2rem;
+  margin-bottom: 2rem;
   background-color: rgba(0, 100, 150, 0.6);
   padding: 1.5rem 1rem;
   border-radius: 12px;
