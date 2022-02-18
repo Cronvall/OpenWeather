@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import Footer from './components/Footer';
 import './index.css'
 
 class Doc extends React.Component{
@@ -10,7 +11,10 @@ class Doc extends React.Component{
 
   render(){
     return(
-     <App />
+      <>
+        <App />
+        <Footer/>
+      </>
     )
   }
 }

@@ -51,9 +51,9 @@ function App() {
         setChartData(response.data);
         console.log("CHART DATA: ", response.data);
       })
-
     }
   }
+  /* ANPASSA BAKGRUND EFTER BESKRIVNING */
 
   return (
     <div className="app">

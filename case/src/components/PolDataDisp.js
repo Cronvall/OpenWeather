@@ -18,7 +18,7 @@ const PolDataDisp = (props) =>{
 
     return(
     <>
-    {inData.list ? 
+    {props.inData.name ? 
 
     <div className="air">
         <h2>Luft Kvalité</h2> 
