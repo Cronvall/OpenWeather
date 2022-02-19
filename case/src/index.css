@@ -137,3 +137,9 @@ h2 {
   text-align: left;
   margin-left: 2rem;
 }
+
+.weatherIcon {
+  background-color: rgba(10, 10, 10, 0.5);
+  border-radius: 12px;
+  text-align: left;
+}

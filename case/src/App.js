@@ -66,7 +66,7 @@ function App() {
         <Displays 
         currentData = {currentData} 
         polData = {polData}
-        chartData = {chartData}/>
+        timeData = {chartData}/>
       </div>
     </div>
   );

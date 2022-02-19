@@ -2,6 +2,7 @@ import React from "react";
 import DataDisp from "./DataDisp";
 import HeadDisp from "./HeadDisp";
 import PolDataDisp from "./PolDataDisp";
+import DayTable from "./DayTable";
 
 const Displays = (props) =>{
 
@@ -13,6 +14,7 @@ const Displays = (props) =>{
                 <HeadDisp inData = {props.currentData}/>
                 <DataDisp inData = {props.currentData}/>
                 <PolDataDisp inData = {props.polData}/>
+                <DayTable inData = {props.timeData}/>
             </>:
                 <>
                     <h2>Ange en stad <br/> i sökrutan</h2>

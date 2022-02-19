@@ -5,14 +5,11 @@ const DataDisp = (props) => {
     const inData = props.inData;
     return(
         <>
-        <div className="description">
-            {inData.weather ? <h2>{inData.weather[0].description}</h2> : <h2>Waiting for input...</h2>}
-          </div>  
           {inData.name !== undefined &&
           <div className="key-details">
             <div className="feels">
               {inData.main ? <p className='bold'>
-                {inData.main.feels_like.toFixed()}°C</p>
+                {Math.round(inData.main.feels_like)}°C</p>
                  : null}
               <p>Känns som</p>
             </div>
