@@ -7,14 +7,12 @@ const ChartDisp = (props) =>{
   const inData = props.inData;
   return(
     <>
-    {inData.list ? 
-
+    {inData.cnt ? 
     <>
       <div className="chartContainer">
         <LineChart dataPoints={inData.list}/> 
       </div>
     </>
-    
 
     : <></>}
     

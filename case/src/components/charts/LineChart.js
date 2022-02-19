@@ -7,8 +7,6 @@ export default class ChartDisp extends Component {
 
   
 	componentDidMount() {
-    console.log("I AM HERE")
-    console.log()
 		const ctx = this.chartRef.current.getContext("2d");
 		new Chart(ctx, {
 			type: "line",

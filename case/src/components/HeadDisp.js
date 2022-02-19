@@ -5,7 +5,7 @@ const HeadDisp = (props) =>{
     return(
         <div className="top">
           <div className="location">
-            <p>{props.inData.name}</p>
+            <p>{props.inData.name}, {props.inData.sys.country}</p>
           </div>
           <div className="temp">
             {props.inData.main ? 

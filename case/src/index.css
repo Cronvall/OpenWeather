@@ -40,7 +40,7 @@ h2 {
 
 .app:before {
   content: "";
-  background: url("./assets/fiskekyrka.jpeg") no-repeat center;
+  background: url("./assets/fiskekyrka.jpeg") no-repeat center/cover;
   background-attachment: fixed;
   position: fixed;
   width: 100%;

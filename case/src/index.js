@@ -13,7 +13,6 @@ class Doc extends React.Component{
     return(
       <>
         <App />
-        <Footer/>
       </>
     )
   }

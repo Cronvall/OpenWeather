@@ -18,7 +18,7 @@ const PolDataDisp = (props) =>{
 
     return(
     <>
-    {props.inData.name ? 
+    {props.inData.list ? 
 
     <div className="air">
         <h2>Luft Kvalité</h2> 
@@ -50,7 +50,7 @@ const PolDataDisp = (props) =>{
             <p className="unit">(μg/m<sup>3</sup>)</p>
     </div>
     
-    :<></>}   
+    :null}   
     </>);
 }
 
