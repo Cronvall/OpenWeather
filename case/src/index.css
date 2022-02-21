@@ -27,26 +27,23 @@ h2 {
 }
 
 .temp {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .app {
   width: 100%;
-  height: 140vh;
-  position: relative;
+  height: 1540px;
   background-color: rgba(0, 0, 0, 0.25);
   color: #ffffff;
 }
 
 .app:before {
   content: "";
-  background: url("./assets/fiskekyrka.jpeg") no-repeat center/cover;
+  background: url("./assets/göteborg.jpeg") no-repeat center/cover;
   background-attachment: fixed;
   position: fixed;
   width: 100%;
   height: 100%;
-  top: 0;
-  left: 0;
   z-index: -1;
 }
 
@@ -56,7 +53,7 @@ h2 {
 }
 
 .app input {
-  padding: 0.7rem 1.5rem;
+  padding: 1rem 2rem;
   font-size: 1.2rem;
   border-radius: 25px;
   border: none;
@@ -71,17 +68,11 @@ h2 {
   max-width: 700px;
   margin: auto;
   padding: 0 1rem;
-  top: 7vh;
+  top: 8vh;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.app .description {
-  position: relative;
-  text-align: center;
-  margin-top: 3rem;
+  background-color: rgba(19, 90, 122, 0.5);
+  padding: 2rem;
+  border-radius: 12px;
 }
 
 .app .key-details {
@@ -91,15 +82,11 @@ h2 {
   width: 100%;
   margin-top: 2rem;
   padding: 1rem;
-  border-radius: 12px;
-  background-color: rgba(0, 100, 150, 0.6);
 }
 
-.app .air {
+.air {
   margin-top: 2rem;
-  background-color: rgba(0, 100, 150, 0.6);
   padding: 1.5rem 1rem;
-  border-radius: 12px;
 }
 
 .bold {
@@ -111,35 +98,4 @@ h2 {
   font-size: 1.2rem;
   margin-right: 5%;
   text-align: right;
-}
-
-.app .chartContainer {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  background-color: rgba(0, 100, 150, 0.6);
-  padding: 1.5rem 1rem;
-  border-radius: 12px;
-}
-
-.footer {
-  position: absolute;
-  bottom: -40vh;
-  width: 100%;
-  height: 10vh;
-  left: 0;
-  background: rgba(0, 0, 0, 0.4);
-  color: white;
-}
-
-.footer .name {
-  margin-top: 2rem;
-  font-size: 1rem;
-  text-align: left;
-  margin-left: 2rem;
-}
-
-.weatherIcon {
-  background-color: rgba(10, 10, 10, 0.5);
-  border-radius: 12px;
-  text-align: left;
 }

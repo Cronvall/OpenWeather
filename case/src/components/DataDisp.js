@@ -7,18 +7,19 @@ const DataDisp = (props) => {
         <>
           {inData.name !== undefined &&
           <div className="key-details">
+
             <div className="feels">
-              {inData.main ? <p className='bold'>
-                {Math.round(inData.main.feels_like)}°C</p>
-                 : null}
+              <p className='bold'> {Math.round(inData.main.feels_like)}°C</p>
               <p>Känns som</p>
             </div>
+
             <div className="humidity">
-              {inData.main ? <p className='bold'>{inData.main.humidity}%</p> : null}
+              <p className='bold'>{inData.main.humidity}%</p>
               <p>Luft Fuktighet</p>
             </div>
+
             <div className="wind">
-              {inData.wind ? <p className='bold'>{inData.wind.speed.toFixed()} m/s</p> : null}
+              <p className='bold'>{Math.round(inData.wind.speed)} m/s</p>
               <p>Vind</p>
             </div>
           </div>

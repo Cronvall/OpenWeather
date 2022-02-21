@@ -8,15 +8,14 @@ const DayTable = (props) =>{
 
 
     const todayToTxt = (weekDayNr) =>{
-        console.log("JAG GLUM", weekDayNr)
-        switch(weekDayNr % 6){
-            case 1: return "Måndag"
-            case 2: return "Tisdag"
-            case 3: return "Onsdag"
-            case 4: return "Torsdag"
-            case 5: return "Fredag"
-            case 6: return "Lördag"
-            case 0: return "Söndag"
+        switch(weekDayNr % 7){
+            case 1: return "Mån"
+            case 2: return "Tis"
+            case 3: return "Ons"
+            case 4: return "Tor"
+            case 5: return "Fre"
+            case 6: return "Lör"
+            case 0: return "Sön"
 
             default: return "Trouble reading"
         }
@@ -26,17 +25,28 @@ const DayTable = (props) =>{
         <>
         {rawData ?
         <>
-        <div className="key-details">
+        <div className="key-details dayTable">
             <div>
-                <h2>{Math.round(rawData[7].main.temp)} °C</h2>
+                <h2>{Math.round(rawData[0].main.temp)} °C</h2>
+                <img src={`http://openweathermap.org/img/wn/${rawData[0].weather[0].icon}@2x.png`}/>
+                <p>Idag</p>
+            </div>
+            <div>
+                <h2>{Math.round(rawData[8].main.temp)} °C</h2>
+                <img src={`http://openweathermap.org/img/wn/${rawData[7].weather[0].icon}@2x.png`}/>
+
                 <p>{todayToTxt(date +1)}</p>
             </div>
             <div>
-                <h2>{Math.round(rawData[15].main.temp)} °C</h2> 
+                <h2>{Math.round(rawData[16].main.temp)} °C</h2> 
+                <img src={`http://openweathermap.org/img/wn/${rawData[15].weather[0].icon}@2x.png`}/>
+
                 <p>{todayToTxt(date +2)}</p> 
             </div>
             <div>
-                <h2>{Math.round(rawData[23].main.temp)} °C</h2>
+                <h2>{Math.round(rawData[24].main.temp)} °C</h2>
+                <img src={`http://openweathermap.org/img/wn/${rawData[23].weather[0].icon}@2x.png`}/>
+
                 <p>{todayToTxt(date +3)}</p> 
             </div>
         </div>
