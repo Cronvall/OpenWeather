@@ -3,7 +3,7 @@
 ## Setup
  Man kan exekevera programmet i två lägen antingen i utvecklarläget eller i "produktionsläget"
  
- Om man inte vill strula med att ladda ner massa program kan man även se hemsidan på här (INPUT URL)
+ Om man inte vill strula med att ladda ner massa program kan man även se hemsidan på <a  href=https://openweather.pages.dev >HÄR</a>
 
 ### Utvecklarläge
 För att starta programmet i utvecklarläget rekommenderar jag att man läser README.md under ./case
