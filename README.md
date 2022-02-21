@@ -15,3 +15,6 @@ När man väl följt Reacts hänvisningar bör man kunna se hemsidan på adresse
 För att köra produktionsversionen får man även här ladda ner node.js och sedan exekevera kommandet 'npm install serve'
 Detta för att kunna köra programmet likt utvecklarläget på en lokalserver.  
 
+## Exempel bilder
+![alt text](https://github.com/cronvall/openweather/blob/main/söksida.png?raw=true)
+![alt text](https://github.com/cronvall/openweather/blob/main/resultat.png?raw=true)
