@@ -6,8 +6,8 @@
  Om man inte vill strula med att ladda ner massa program kan man även se hemsidan på <a  href=https://openweather.pages.dev >HÄR</a>
 
 ### Utvecklarläge
-För att starta programmet i utvecklarläget rekommenderar jag att man läser README.md under ./case
-Detta då det är Reacts egna hänvisningar till hur man bör göra. Notera dock att man behöver ha node.js nedladdat
+För att starta bör man ha node.js nedladdat. När man har det kan man köra
+ett  kommand i från directory ./case: "npm start"
 https://nodejs.org/en/download/ <br>
 När man väl följt Reacts hänvisningar bör man kunna se hemsidan på adressen localhost/3000
 
