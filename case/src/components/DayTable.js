@@ -21,6 +21,14 @@ const DayTable = (props) =>{
         }
     }
 
+    const selectIcon = (context) =>{
+        const url =`http://openweathermap.org/img/wn/${context}@2x.png`
+        if(url.includes("n@2x")){
+            console.log(url)
+        }
+        return url
+    }
+ 
     return(
         <>
         {rawData ?
@@ -28,24 +36,24 @@ const DayTable = (props) =>{
         <div className="key-details dayTable">
             <div>
                 <h2>{Math.round(rawData[0].main.temp)} °C</h2>
-                <img alt={"icon"}src={`http://openweathermap.org/img/wn/${rawData[0].weather[0].icon}@2x.png`}/>
+                <img alt={"icon"}src={selectIcon(rawData[0].weather[0].icon)}/>
                 <p>Idag</p>
             </div>
             <div>
                 <h2>{Math.round(rawData[8].main.temp)} °C</h2>
-                <img alt={"icon"}src={`http://openweathermap.org/img/wn/${rawData[7].weather[0].icon}@2x.png`}/>
+                <img alt={"icon"}src={selectIcon(rawData[8].weather[0].icon)}/>
 
                 <p>{todayToTxt(date +1)}</p>
             </div>
             <div>
                 <h2>{Math.round(rawData[16].main.temp)} °C</h2> 
-                <img alt={"icon"}src={`http://openweathermap.org/img/wn/${rawData[15].weather[0].icon}@2x.png`}/>
+                <img alt={"icon"}src={selectIcon(rawData[16].weather[0].icon)}/>
 
                 <p>{todayToTxt(date +2)}</p> 
             </div>
             <div>
                 <h2>{Math.round(rawData[24].main.temp)} °C</h2>
-                <img alt={"icon"}src={`http://openweathermap.org/img/wn/${rawData[23].weather[0].icon}@2x.png`}/>
+                <img alt={"icon"}src={selectIcon(rawData[24].weather[0].icon)}/>
 
                 <p>{todayToTxt(date +3)}</p> 
             </div>
